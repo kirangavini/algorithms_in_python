@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10f6b048-23c0-45a2-95db-13ab15edf7bc}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>anagram.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="plane and metal info.txt" />
+    <Content Include="plane.txt" />
+    <Content Include="plane1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anagram.py" />
+    <Compile Include="binary.py" />
+    <Compile Include="circuitdesign.py" />
+    <Compile Include="dataoperations.py" />
+    <Compile Include="exercise.py" />
+    <Compile Include="exercise2.py" />
+    <Compile Include="infixtoprefix.py" />
+    <Compile Include="inheritance.py" />
+    <Compile Include="listtypes.py" />
+    <Compile Include="minimumnumber.py" />
+    <Compile Include="multipleparenthesis.py" />
+    <Compile Include="p1.py" />
+    <Compile Include="planeformat.py" />
+    <Compile Include="postfix.py" />
+    <Compile Include="queue.py" />
+    <Compile Include="reverse.py" />
+    <Compile Include="stringscoring.py" />
+    <Compile Include="zoneintersection.py" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
